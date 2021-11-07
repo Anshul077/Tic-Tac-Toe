@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Source+Sans+Pro:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('bg.jpg');
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav {
+  height: 40px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 60px;
+}
+
+#li2{
+color: rgb(248, 154, 120);
+}
+
+.gameContainer {
+  width: 50vw;
+  height: 90vh;
+  margin: 90px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gameBox{
+    display: grid;
+    grid-template-columns:repeat(3,8vw);
+    grid-template-rows: repeat(3,8vw);
+    margin: 10px auto 15px auto;
+}
+
+.box{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    cursor: pointer;
+    color: orange;
+}
+
+.box:hover{
+    background-color: none;
+}
+
+.border-left{
+    border-left: 0;
+}
+.border-top{
+    border-top: 0;
+}
+.border-bottom{
+    border-bottom: 0;
+}
+.border-right{
+    border-right: 0;
+}
+
+#info{
+font-size: 28px;
+color: white;
+}
+
+#info2,#info3,#info4{
+  font-size: 28px;
+  color: greenyellow;
+}
+
+
+
+.main-info{
+  margin: -20px auto 25px auto;
+}
+
+@keyframes incWidth {
+ from   {font-size: 3vw;}
+  to {font-size: 6vw;}
+}
+@keyframes incWidth2 {
+ from   {font-size: 9vw;}
+  to {font-size: 12vw;}
+}
+@keyframes decWidth {
+  from   {font-size: 6vw;}
+  to{font-size: 3vw;}
+}
+@keyframes decWidth2 {
+  from   {font-size: 12vw;}
+  to{font-size: 9vw;}
+}
+
+
+#reset{
+padding: 10px;
+width: 11vw;
+background-color: #eff447;
+border: none;
+border-radius: 5px;
+margin-top: 26px;
+font-size: 15px;
+cursor: pointer;
+}
+
+#reset:hover{
+  transform: translateY(-3px);
+  transition: transform .2s ease-in;
+}
+
+@media screen and (max-width:450px){
+  .gameBox{
+    grid-template-columns: repeat(3,15vw);
+grid-template-rows: repeat(3,15vw);
+margin-top: 63px;
+  }
+
+  #reset{
+    width: 34vw;
+margin-top: 44px;
+  }
+
+  .box{
+    font-size: 9vw;
+  }
+}
+
+  
